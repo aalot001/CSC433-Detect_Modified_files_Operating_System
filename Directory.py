@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-
-# Ahmed Alotaibi, Akshey
+# Ahmed Alotaibi, Akshay Singh
 # 11/8/2017
 
 # A program that store the files' data in a given directory
@@ -31,8 +30,8 @@ class Files():
                   8:'time of most recent modification: ',
                   9:'time of most metadata change: '}
         files =  [[f,os.stat("{0}/{1}".format(directory,f))]
-                     for f in listdir(directory)
-                   if isfile(join(directory, f))]
+                     for f in listdir(directory)]
+                   
         p = {files[filename][0]: {v:files[i][1][k]
                 for i in range(len(files))
               for k,v in values.items() }
@@ -51,7 +50,7 @@ class Files():
     #Writes the returned value of allFilesInfo to an external file called
     #"file data.txt"
     def store(self,directory):
-        with open('file data.txt','w') as f:
+        with open('data.txt','w') as f:
             
             k = [[j for j in i]
                  for i in self.allFilesInfo(directory)]
@@ -70,7 +69,7 @@ class Files():
             print("something changed")
 
 def main():
-    path = input("please enter the directory you want to search in")
+    path = input("please enter the directory you want to search in: ")
     test = Files()
     print("\n")
     print("Files found in the given directory: ")
