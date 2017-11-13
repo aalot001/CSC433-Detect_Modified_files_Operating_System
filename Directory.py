@@ -9,6 +9,7 @@ import time
 from os import listdir
 from os.path import isfile, join
 import pprint
+import re
 
 class Files():
 
@@ -45,6 +46,8 @@ class Files():
     def store(self,directory):
         k = self.filesInDirWithInfo(directory)
         with open('data.txt','w') as f:
+            k = re.sub(r',', ",\n", str(k))
+            k = re.sub(r'}}', "}}\n", str(k))
             f.write(str(k))
             
     """
