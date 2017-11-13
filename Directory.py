@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 # Ahmed Alotaibi, Akshay Singh
 # 11/8/2017
 # A program that store the files' data in a given directory
@@ -79,7 +77,7 @@ class Files():
                         print("The file /{}\ is a new file".format(i))
 
 def main():
-    path = input("please enter the directory you want to search in: ")
+    path = input("Please enter the directory you want to search in: ")
     test = Files()
     print("\n")
     print("Files found in the given directory: ")
@@ -88,8 +86,8 @@ def main():
     print("Files' information found in the given directory: ")
     pprint.pprint(test.filesInDirWithInfo(path))
     test.store(path)
-    print("\n20 seconds to make changes the Directory such:\n\
-          Creating, editing, deleting file or whatever you like if exist")
+    print("\n20 seconds to make changes to the Directory:\n\
+          Try Creating, editing or deleting a file")
     time.sleep(20)
     test.check(path)
 

@@ -1,0 +1,32 @@
+Group:
+Ahmed Alotaibi and Akshay Singh
+
+References:
+https://www.saltycrane.com/blog/2010/04/options-listing-files-directory-python/
+https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+
+Purpose:
+The purpose of the tool is to examine the files in a directory tree and looks for any changes to the files and store the file information in a file. 
+
+How to use the program:
+
+(1) You can run the program by typing ./Directory.py
+(2) Now the program will ask you to enter the name of the directory that you want to examine.
+(3) The program will print the files that are in the directory and some extra informatin about these files.
+(4) The program will sleep for 20 secnnds so that you can make any changes in directory.
+(5) If you have made changes, the program will print the files that were changed and if have not made any changes the program will just print "nothing has changed".
+(6) It saves the information about the files in data.txt file.
+
+Press ctrl + c to end the program in the middle.
+
+How it works:
+
+The program ask the user for the name of the directory.
+Uses the listdir to get the list of files or subdirectory. 
+Then it returns a dictionary with key of filename(and path) and value of another dictionary containing the files properties.
+After this it stores the information returned by the filesInDirWithInfo in data.txt file.
+Once this is done check function will look for any changes made in the directory and return the result.
+
+ 
+
+
