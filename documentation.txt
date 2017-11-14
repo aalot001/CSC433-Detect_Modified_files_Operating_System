@@ -1,16 +1,22 @@
-Group:
+
+
+Group Project: Detect Modified files
+11/13/2017
 Ahmed Alotaibi and Akshay Singh
 
 References:
-https://www.saltycrane.com/blog/2010/04/options-listing-files-directory-python/
-https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+
+1- https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+2- http://stackabuse.com/python-list-files-in-a-directory/
+3- https://stackoverflow.com/questions/15069091/compare-directories-on-file-folder-names-only-printing-any-differences
+4- https://www.tutorialspoint.com/python3/os_stat.htm
 
 Purpose:
 The purpose of the tool is to examine the files in a directory tree and looks for any changes to the files and store the file information in a file. 
 
 How to use the program:
 
-(1) You can run the program by typing ./Directory.py
+(1) You can run the program by typing any directory name in the current directory.
 (2) Now the program will ask you to enter the name of the directory that you want to examine.
 (3) The program will print the files that are in the directory and some extra informatin about these files.
 (4) The program will sleep for 20 secnnds so that you can make any changes in directory.
